@@ -1,0 +1,21 @@
+# Claude Code 個人設定（共有しない）
+settings.local.json
+*.local.json
+
+# 履歴・キャッシュ
+history.jsonl
+*.log
+cache/
+sessions/
+telemetry/
+
+# メモリ（個人情報）
+memory/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+*.swp
