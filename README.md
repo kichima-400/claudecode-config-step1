@@ -28,6 +28,7 @@
 | スキル | 内容 | 取得元 |
 |---|---|---|
 | `skills/powershell-expert/` | PowerShell スクリプト・GUI開発 | [hmohamed01/powershell-expert](https://github.com/hmohamed01/powershell-expert) |
+| `skills/windows-shell/` | Windows パス処理・シェルコマンドガイドライン | [nicoforclaude/claude-windows-shell](https://github.com/nicoforclaude/claude-windows-shell) |
 | `skills/xlsx/` | Excel/スプレッドシート操作（.xlsx/.xlsm/.csv/.tsv） | [anthropics/skills](https://github.com/anthropics/skills) |
 
 ## インストール方法
@@ -93,5 +94,6 @@ claude-team-config/
 │   └── vba-skills/
 └── skills/              # スキル（単体）
     ├── powershell-expert/
+    ├── windows-shell/
     └── xlsx/
 ```
