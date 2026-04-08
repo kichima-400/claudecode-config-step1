@@ -46,6 +46,16 @@ Get-ChildItem "$RepoRoot\plugins" -Directory | ForEach-Object {
     Write-Ok $_.Name
 }
 
+# --- skills ---
+Write-Step "skills をインストール中..."
+$skillsDir = "$ClaudeDir\skills"
+New-Item -ItemType Directory -Force -Path $skillsDir | Out-Null
+Get-ChildItem "$RepoRoot\skills" -Directory | ForEach-Object {
+    $dest = "$skillsDir\$($_.Name)"
+    Copy-Item $_.FullName -Destination $dest -Recurse -Force
+    Write-Ok $_.Name
+}
+
 # --- CLAUDE.md ---
 Write-Step "CLAUDE.md を確認中..."
 $claudeMd = "$ClaudeDir\CLAUDE.md"

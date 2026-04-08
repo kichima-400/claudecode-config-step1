@@ -46,6 +46,15 @@ for d in "$REPO_ROOT/plugins/"/*/; do
   ok "$name"
 done
 
+# --- skills ---
+step "skills をインストール中..."
+mkdir -p "$CLAUDE_DIR/skills"
+for d in "$REPO_ROOT/skills/"/*/; do
+  name="$(basename "$d")"
+  cp -r "$d" "$CLAUDE_DIR/skills/$name"
+  ok "$name"
+done
+
 # --- CLAUDE.md ---
 step "CLAUDE.md を確認中..."
 if [[ -f "$CLAUDE_DIR/CLAUDE.md" ]]; then

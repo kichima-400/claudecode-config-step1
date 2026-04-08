@@ -18,11 +18,17 @@
 | `agents/python-reviewer.md` | Pythonコードレビュー専門 |
 | `agents/vba-testing-guide.md` | VBAテスト戦略専門（Opusモデル） |
 
-### スキル（文脈に応じて自動参照）
+### プラグイン（文脈に応じて自動参照）
 | プラグイン | 含まれるスキル |
 |---|---|
 | `plugins/ecc-python/` | python-patterns / python-testing |
 | `plugins/vba-skills/` | vba-core-architecture / vba-error-events / vba-naming-and-data / vba-object-model-and-performance / vba-procedures-and-encapsulation |
+
+### スキル（文脈に応じて自動参照）
+| スキル | 内容 | 取得元 |
+|---|---|---|
+| `skills/powershell-expert/` | PowerShell スクリプト・GUI開発 | [hmohamed01/powershell-expert](https://github.com/hmohamed01/powershell-expert) |
+| `skills/xlsx/` | Excel/スプレッドシート操作（.xlsx/.xlsm/.csv/.tsv） | [anthropics/skills](https://github.com/anthropics/skills) |
 
 ## インストール方法
 
@@ -82,7 +88,10 @@ claude-team-config/
 ├── CLAUDE.md            # チーム共通の基本指示
 ├── rules/               # 常時適用ルール
 ├── agents/              # エージェント定義
-└── plugins/             # スキルプラグイン
-    ├── ecc-python/
-    └── vba-skills/
+├── plugins/             # プラグイン（スキルセット）
+│   ├── ecc-python/
+│   └── vba-skills/
+└── skills/              # スキル（単体）
+    ├── powershell-expert/
+    └── xlsx/
 ```
